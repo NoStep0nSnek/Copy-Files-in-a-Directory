@@ -1,3 +1,4 @@
+# A program that reads all files under a directory and then writes copies of them to a new directory
 from os import walk
 import os
 
