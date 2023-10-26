@@ -1,6 +1,8 @@
 from os import walk
 import os
 
+readPath = "Insert path to be read here"
+writePath = "Insert path to write to here"
 
 if not os.path.exists(writePath):
     os.makedirs(writePath)
@@ -46,4 +48,4 @@ def getFiles(path, addition_to_path = ""):
         for i in range(len(d)):
             getFiles(path + "\\" + d[i], addition_to_path + "\\" +  d[i])
     
-getFiles(mypath)
+getFiles(readPath)
